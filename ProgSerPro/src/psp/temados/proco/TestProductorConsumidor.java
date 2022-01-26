@@ -1,7 +1,7 @@
 package psp.temados.proco;
 /**
  * Clase para probar el modelo de sincronización 
- * productor-consumidor
+ * productor-consumidor.
  * @author rafa
  * @version 1.0
  */

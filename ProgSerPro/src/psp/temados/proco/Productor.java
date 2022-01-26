@@ -1,7 +1,7 @@
 package psp.temados.proco;
 /**
  * Ejemplo de sincronización para el modelo productor-consumidor
- * , esta clase representa al productor
+ * , esta clase representa al productor.
  * @author rafa
  * @version 1.0
  *

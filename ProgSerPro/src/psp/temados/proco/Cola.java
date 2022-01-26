@@ -1,5 +1,9 @@
 package psp.temados.proco;
-
+/**
+ * Objeto compartido entre productores y consumidores
+ * @author rafa
+ * @version 1.0
+ */
 public class Cola {
 	private int numero;
 	private boolean disponible = false;
