@@ -9,15 +9,17 @@ package psp.temados.proco;
 public class Productor extends Thread {
 	private Cola cola;
 	private int hilo;
+	private int tiempoProceso;
 	/**
 	 * Constructor específico del productor para inicializar
 	 * el objeto compartido y el número de productor
 	 * @param cola
 	 * @param hilo
 	 */
-	public Productor(Cola cola, int hilo) {
+	public Productor(Cola cola, int hilo, int tiempoProceso) {
 		this.cola = cola;
 		this.hilo = hilo;
+		this.tiempoProceso = tiempoProceso;
 	}
 
 	public void run() {
@@ -25,7 +27,7 @@ public class Productor extends Thread {
 			//produce un nuevo valor en la cola
 			this.cola.put(i, this.hilo); 
 			try {
-				sleep(100);
+				sleep(this.tiempoProceso);
 			} catch (InterruptedException e) { }    
 		}
 	}
